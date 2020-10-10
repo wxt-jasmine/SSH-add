@@ -55,17 +55,24 @@
             (1) git log  --pretty=oneline 查看版本ID
             (2) git reset --hard +ID 跳转到某版本
             (3) 处于旧版本时 使用 git reflog --pretty=oneline 查看全部版本
-            (4) git reset --hard +ID 跳转到某版本   
-        13 撤销修改 类似ctrl+z
-            git checkout -- +文件名 （注意必须要跟踪    
-        14 删除远程仓库
+            (4) git reset --hard +ID 跳转到某版本     
+        13 删除远程仓库
             git remote rm origin    
-        15 修改文件后再次上传到远程仓库
+        14 修改文件后再次上传到远程仓库
             先commit 到本地仓库
             随后在输入 git push {注意：此代码不能是第一次}
-        16 克隆远程仓库
+        15 克隆远程仓库
             git clone 仓库地址    
             仓库地址：打开远程仓库，点击code，选择方式后复制地址
+        16 分支
+            (1) git branch 其中分支前面带有*的是指现在所处的分支 
+            (2) git branch +分支名称 创建新分支  
+                例如处于main分支上创建一个logn分支：
+                    a.logn 分支的代码 和main 分支代码完全相同
+                    b.创建后 所处分支还是main分支    
+        17 git checkout
+            (1) 撤销修改 类似ctrl+z; git checkout -- +文件名 （注意必须要跟踪       
+            (2) 切换分支  git checkout +文件名     
         -->
     <!-- 
           1.clear 为清除当前命令框中输入内容 就和qq清空当前聊天消息一样

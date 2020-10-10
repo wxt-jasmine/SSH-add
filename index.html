@@ -69,10 +69,14 @@
             (2) git branch +分支名称 创建新分支  
                 例如处于main分支上创建一个logn分支：
                     a.logn 分支的代码 和main 分支代码完全相同
-                    b.创建后 所处分支还是main分支    
+                    b.创建后 所处分支还是main分支  
+            (3) 合并分支  { 顺序不能变 }
+                    a.git checkout main
+                    b.git merge +需要合并的分支         
         17 git checkout
             (1) 撤销修改 类似ctrl+z; git checkout -- +文件名 （注意必须要跟踪       
-            (2) 切换分支  git checkout +文件名     
+            (2) 切换分支  git checkout +文件名 
+            (3) 创建并切换 git checkout -b +文件名       
         -->
     <!-- 
           1.clear 为清除当前命令框中输入内容 就和qq清空当前聊天消息一样

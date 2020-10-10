@@ -71,8 +71,9 @@
                     a.logn 分支的代码 和main 分支代码完全相同
                     b.创建后 所处分支还是main分支  
             (3) 合并分支  { 顺序不能变 }
-                    a.git checkout main
-                    b.git merge +需要合并的分支         
+                    a.合并之前应该把该分支的内容进行上传到仓库操作
+                    b.git checkout main
+                    c.git merge +需要合并的分支         
         17 git checkout
             (1) 撤销修改 类似ctrl+z; git checkout -- +文件名 （注意必须要跟踪       
             (2) 切换分支  git checkout +文件名 

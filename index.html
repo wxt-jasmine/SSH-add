@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!--
+        1 在需要转换仓库的地方右键打开git bash
+        2 在命令行输入git init 初始化仓库
+        3 输入 touch + 文件名 可以添加文件 例如 touch index.html
+        4 git status 查看仓库内容
+            (1) 输入 git status 可以查看仓库内容 其中标红的是未被跟踪的文件
+            (2) git status 的精简模式 git status -s 或者 git status --short  其中前方有三个红色问号的是未被跟踪的文件
+        5 git add 跟踪新文件
+            (1) 跟踪新文件 git add +需要跟踪的文件名 { git add .  在add后加上英文的 “.” 表示跟踪全部   }
+                a 此时在运行git status命令，看见跟踪的文件名在changes to be committed 这行下面表明被跟踪处于暂存状态
+                b 在精简模式下，文件名前面标有绿色A标记的表示被跟踪的文件
+            (2) 把已跟踪的且已被修改的文件放到暂存区
+                a 此时在运行git status命令,看见跟踪的文件名在changes to be committed 这行下面表明被跟踪处于暂存状态    
+                b 在精简模式下，文件名前面标有绿色M标记的表示该文件是已跟踪的且已被修改的文件放到暂存区
+            (3) 把有冲突的文件标记为已解决状态    
+        6 git reset HEAD 把文件从暂存区中移除
+            (1) git reset HEAD +需要移除的文件名 { git reset HEAD .  在add后加上英文的 “.” 表示移除全部   }
+        7 提交到仓库
+            (1) git commit -m "提交描述"  { 在此之前需要将文件放入暂存区 }
+            (2) git commit -a -m "提交描述"  { 可以直接跳过暂存区直接放入仓库，首先这个文件需要被跟踪 }
+        8 git checkout空格--空格文件名 撤销对文件的修改 
+        9 git rm 移除文件
+            (1) git rm -f 文件名 从仓库和工作区同时移除该文件
+            (2) git rm -cached 文件名 从仓库中移除该文件，但保留工作区中的该文件
+            (3) 使用git status 查看 仓库内容 其中绿色 D 或 deleted 表明在下次提交的时候在工作区中删除该文件
+        10 忽略文件 创建一个 .gitignore 文件 在其中添加忽略规则或忽略文件，写法规则如下：
+            (1) #开头的是注释
+            (2) /结尾的是目录
+            (3) /开头 防止递归
+            (4) ！开头表示取反
+            (5) 可以使用glob模式进行文件和文件夹的匹配
+                a.glob指简化了正则的表达式
+                b.*匹配0到无数给字符
+                c.[abc]选择adc中任意一个
+                d.?只匹配一个字符
+                e.[0-9]匹配0-9个字符
+                f.a/**/z 匹配a目录下以z为结尾的东西，可以写a/b/z
+        11 查看提交历史
+            (1) git log 列出所有历史，最近的提交在最上面
+            (2) git log -2 只显示最新的x条历史       
+            (3) git log -2 --pretty=oneline 再一行上显示最近x条历史信息
+            (4) git log -2 --pretty=format:"%h | %an | %ar | %s" 提交的简写哈希值 作者名字 作者修订日志 提交说明
+        12 回退版本
+            (1) git log  --pretty=oneline 查看版本ID
+            (2) git reset --hard +ID 跳转到某版本
+            (3) 处于旧版本时 使用 git reflog --pretty=oneline 查看全部版本
+            (4) git reset --hard +ID 跳转到某版本   
+        13 撤销修改 类似ctrl+z
+            git checkout -- +文件名 （注意必须要跟踪    
+        14 删除远程仓库
+            git remote rm origin    
+        15 修改文件后再次上传到远程仓库
+            先commit 到本地仓库
+            随后在输入 git push {注意：此代码不能是第一次}
+        -->
+    <!-- 
+          1.clear 为清除当前命令框中输入内容 就和qq清空当前聊天消息一样
+            
+    -->
+    <script src="./index.js"></script>
+</body>
+
+</html>

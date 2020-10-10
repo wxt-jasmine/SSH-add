@@ -1,0 +1,12 @@
+# 忽略 doc目录下所有.pdf文件
+doc/**/*.pdf
+#忽略doc目录下notes.txt 但不忽略doc/server/arch.txt
+doc/*.txt
+# 忽略任何目录下名为build文件夹
+build/
+#只忽略当前目录下的TODO文件 不忽略 subdir/TODO
+/TODO
+#忽略了.a文件
+*.a
+#即使忽略了.a文件，但是跟踪所有lib.a文件
+!lib.a

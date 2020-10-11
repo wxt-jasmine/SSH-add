@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -79,10 +79,10 @@
                     a.合并之前应该把该分支的内容进行上传到仓库操作
                     b.git checkout main
                     c.git merge +需要合并的分支   
-            (4) 删除分支 git branch -d +分支名称   
-            (5) git branch -M +新分支名    修改当前分支名        
+            (4) 删除分支 git branch -d +分支名称 { 用于删除合并后的分支 }   git branch -D +分支名称 { 用于强行删除分支 }
+            (5) git branch -M +新分支名    修改当前分支名  
             (6) 删除远程分支 git push 远程仓库名称 --delete 分支名称      
-                    【 远程仓库别名默认为 origin 】   
+                    【 远程仓库别名默认为 origin 】
         17 git checkout
             (1) 撤销修改 类似ctrl+z; git checkout -- +文件名 （注意必须要跟踪       
             (2) 切换分支  git checkout +文件名 
@@ -99,6 +99,7 @@
             (2) git checkout -b 本地分支名称 远程仓库名称/远程分支名称  { 需要重命名 }
         21 拉取与当前分支相对应的远程分支中最新的代码
             git pull
+            
         -->
     <!-- 
           1.clear 为清除当前命令框中输入内容 就和qq清空当前聊天消息一样

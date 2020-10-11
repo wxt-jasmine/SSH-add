@@ -57,10 +57,12 @@
             (3) 处于旧版本时 使用 git reflog --pretty=oneline 查看全部版本
             (4) git reset --hard +ID 跳转到某版本     
         13 远程仓库
-            git remote rm origin    删除远程仓库
-            git remote -v           查看远程仓库
-            git remote add origin +地址 绑定远程仓库
-            git push -u origin 分支名 将某分支上传到远程仓库
+            (1) git remote rm origin    删除远程仓库
+            (2) git remote -v           查看远程仓库
+            (3) git remote add origin +地址 绑定远程仓库
+            (4) git push -u origin 分支名 将某分支上传到远程仓库
+            (5) git remote show +远程仓库名称 查看远程仓库所有的分支列表 
+                    【 远程仓库别名默认为 origin 】
         14 修改文件后再次上传到远程仓库
             先commit 到本地仓库
             随后在输入 git push {注意：此代码不能是第一次}
@@ -87,6 +89,9 @@
             当出现冲突后，应当先自己打开文件，去手动解决冲突。
             之后 执行 git add 。 表明解决冲突
             最后在提交到仓库
+        19 上传本地分支
+            git push -u 远程仓库别名 本地分支名称：远程分支名称{远程分支名称可以不写}
+            【 远程仓库别名默认为 origin 】
         -->
     <!-- 
           1.clear 为清除当前命令框中输入内容 就和qq清空当前聊天消息一样
@@ -94,6 +99,5 @@
     -->
     <script src="./index.js"></script>
 </body>
-<h5>lujihangsb</h5>
 
 </html>

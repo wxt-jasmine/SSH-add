@@ -59,6 +59,8 @@
         13 远程仓库
             git remote rm origin    删除远程仓库
             git remote -v           查看远程仓库
+            git remote add origin +地址 绑定远程仓库
+            git push -u origin 分支名 将某分支上传到远程仓库
         14 修改文件后再次上传到远程仓库
             先commit 到本地仓库
             随后在输入 git push {注意：此代码不能是第一次}
@@ -75,11 +77,16 @@
                     a.合并之前应该把该分支的内容进行上传到仓库操作
                     b.git checkout main
                     c.git merge +需要合并的分支   
-            (4) 删除分支 git branch -d +分支名称              
+            (4) 删除分支 git branch -d +分支名称   
+            (5) git branch -M main    修改当前分支名        
         17 git checkout
             (1) 撤销修改 类似ctrl+z; git checkout -- +文件名 （注意必须要跟踪       
             (2) 切换分支  git checkout +文件名 
             (3) 创建并切换 git checkout -b +文件名       
+        18 解决冲突
+            当出现冲突后，应当先自己打开文件，去手动解决冲突。
+            之后 执行 git add 。 表明解决冲突
+            最后在提交到仓库
         -->
     <!-- 
           1.clear 为清除当前命令框中输入内容 就和qq清空当前聊天消息一样
